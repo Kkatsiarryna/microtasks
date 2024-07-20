@@ -11,6 +11,7 @@ import {FirstFilterComponent} from './05_filter/FirstFilterComponent';
 import {FullInput} from "./06_input/FullInput";
 import {InputUniversal} from "./06_input/InputUniversal";
 import {ButtonUniversal} from "./06_input/ButtonUniversal";
+import MainTodolist from "./07_AssociativeArray/MainTodolist";
 
 function App() {
     const students = [
@@ -82,13 +83,14 @@ function App() {
 
       {/*input*/}
           {/*<FullInput addMessage={addMessage}/>*/}
-          <InputUniversal setTitle = {setTitle} title = {title}/>
-          <ButtonUniversal name={"+"} callBack={callbackButtonHandler}/>
-      {message.map((el, index) => {
-          return (
-              <div key={index}>{el.message}</div>
-          )
-      })}
+      {/*    <InputUniversal setTitle = {setTitle} title = {title}/>*/}
+      {/*    <ButtonUniversal name={"+"} callBack={callbackButtonHandler}/>*/}
+      {/*      {message.map((el, index) => {*/}
+      {/*    return (*/}
+      {/*        <div key={index}>{el.message}</div>*/}
+      {/*    )*/}
+      {/*})}*/}
+          <MainTodolist/>
 </>
 )
     ;
